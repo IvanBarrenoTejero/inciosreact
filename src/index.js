@@ -4,6 +4,7 @@ import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 import DibujosComplejosArray from "./components/DibujosComplejosArray.jsx";
 import DibujosComplejosRender from "./components/DibujosComplejosRender.jsx";
+import PadreDeportes from "./components/PadreDeportes.jsx";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -15,7 +16,7 @@ root.render(
       {/* <Contador inicio="15"/> */}
       {/* Coche BMW X5: marca, modelo, velocidad máxima y aceleración */}
       {/* <Car marca="BMW" modelo="X5" velocidadmaxima="250" aceleracion="20" /> */}
-      <DibujosComplejosRender />
+      <PadreDeportes />
     </>
   </React.StrictMode>,
 );
