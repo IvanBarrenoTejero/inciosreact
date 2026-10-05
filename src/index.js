@@ -1,19 +1,25 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import reportWebVitals from './reportWebVitals';
-import SumarNumeros from "components/SumarNumeros/SumarNumeros.js";
-import App from './components/App/App';
-import SaludoPadre from './components/Saludo/SaludoPadre';
-import PadreMatematicas from './components/PadreMatematicas';
-import Contador from './components/Contador/Contador';
-import Car from './components/Car';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import reportWebVitals from "./reportWebVitals";
+import DibujosComplejosArray from "./components/DibujosComplejosArray.jsx";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <Car marca="Audi" modelo="Q8" velocidadmaxima="240" aceleracion="25"/>
-    <Car marca="Ponticac" modelo="Firebird" velocidadmaxima="340" aceleracion="33"/>
-  </React.StrictMode>
+    <>
+      {/* Coche Audi A3: marca, modelo, velocidad máxima y aceleración */}
+      {/* <Car marca="Audi" modelo="A3" velocidadmaxima="240" aceleracion="25" /> */}
+      {/* <Contador inicio="2"/> */}
+      {/* <Contador inicio="15"/> */}
+      {/* Coche BMW X5: marca, modelo, velocidad máxima y aceleración */}
+      {/* <Car marca="BMW" modelo="X5" velocidadmaxima="250" aceleracion="20" /> */}
+      <DibujosComplejosArray />
+    </>
+  </React.StrictMode>,
 );
+
+// If you want to start measuring performance in your app, pass a function
+// to log results (for example: reportWebVitals(console.log))
+// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
