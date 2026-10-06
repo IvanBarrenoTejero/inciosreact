@@ -1,5 +1,5 @@
 import { Component } from "react";
-import Comic from "../Comic";
+import Comic from "./Comic";
 
 export default class Comics extends Component {
   state = {
